@@ -22,7 +22,7 @@ for i in range(2,10000):
     for el in div_arr:
         div_sum += el
 
-    if getDivisors(div_sum, i) == i:
+    if getDivisors(div_sum, i) == i and i != div_sum:
         amic_num_arr.append(i)
         amic_num_arr.append(div_sum)
 amic_num_set = set(amic_num_arr)

@@ -1,8 +1,8 @@
 import math
 
 prime_sum = 0
-prime_array = [0]
-from_num = 1
+prime_array = [0,2]
+from_num = 2
 
 while(prime_array[-1] < 2000000):
 
@@ -13,7 +13,7 @@ while(prime_array[-1] < 2000000):
     is_prime = True
 
     for i in range(num_half):
-        if from_num % (i + 1) == 0 and i != 0 and i != from_num:
+        if from_num % (i + 1) == 0 and i != 0:
             is_prime = False
             break
 
