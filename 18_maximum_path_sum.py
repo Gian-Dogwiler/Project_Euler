@@ -19,7 +19,18 @@ triangle_array = [
 [63,66,4,68,89,53,67,30,73,16,69,87,40,31],
 [4,62,98,27,23,9,70,98,73,93,38,53,60,4,23]
 ]
+highest_ind = []
 
+for row in triangle_array:
+    num_arr = []
+    for num in row:
+        num_arr.append(num)
+    sorted_nums = sorted(num_arr)
+    highest_num = num_arr[-1]
+    highest_ind += triangle_array[len(row)-1].index(highest_num)
+print(highest_ind)
+
+'''
 def getNextNums(arr_row: int, arr_col: int):
     next_row_ind = arr_row + 1
     next_num_ind = [arr_col, arr_col + 1]
@@ -38,3 +49,4 @@ for i in range(14):
 
 print(total_sum)
 print(path_hist)
+'''
